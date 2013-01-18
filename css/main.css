@@ -65,6 +65,8 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -159,10 +161,17 @@ nav a:hover {
    ========================================================================== */
 
 
+h1{
+    font-weight:lighter;
+}
 
+nav a{
+    font-weight:lighter;
+}
+nav a:hover{
+    text-decoration: underline;
 
-
-
+}
 
 
 
@@ -230,11 +239,13 @@ nav a:hover {
 
     .title {
         float: left;
+        /*position:fixed;*/
     }
 
     nav {
         float: right;
         width: 38%;
+        /*position:fixed;*/
     }
 
 /* ============
