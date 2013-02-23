@@ -2,14 +2,17 @@
 <html>
 <head>
 	<title>Love</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style4.css" />
 	<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
 	<style>
-/*	@media only screen and (max-width: 768px){
-		.parent{
-			margin-right:1000px!important;
-		} 
-	}*/
+/*	@media (max-width: 767px) {
+    . {
+        margin-left:-300px;
+    }
+   }*/
 
 	body{
 		/*background:url(http://subtlepatterns.com/patterns/ecailles.png);*/
@@ -24,7 +27,8 @@
 		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    		font-weight: 300;
    		-webkit-font-smoothing: antialiased;
-    
+        -o-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
 	}
 	#f1_container {
 		padding-left:20px;
@@ -49,18 +53,28 @@
 	}
 	#f1_container {
 	  -webkit-perspective: 1000;
+      -moz-perspective:1000;
+      -o-perspective:1000;
 	}
 	#f1_card {
 	  width: 100%;
 	  height: 100%;
 	  -webkit-border-radius: 15px;
+      -o-border-radius:15px;
+      -moz-border-radius:15px;
 	  /*overflow:hidden;*/
+      -o-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
 	  -webkit-transform-style: preserve-3d;
 	  -webkit-transition: all 1.0s linear;
+      -o-transition: all 1.0s linear;
+      -moz-transition: all 1.0s linear;
 	  opacity:.7;
 	}
 	#f1_container:hover #f1_card {
 	  -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
 	  box-shadow: -1px 1px 1px #aaa;
 	}
 /*	#f1_container2:hover #f1_card {
@@ -72,14 +86,23 @@
 	  width: 100%;
 	  height: 100%;
 	  -webkit-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
 	}
 	.face.back {
 	  display: block;
 	  -webkit-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
 	  -webkit-box-sizing: border-box;
+      -o-box-sizing:border-box;
+      -moz-box-sizing:border-box;
 	   -webkit-border-radius: 15px;
-	  padding: 10px;
-	  background-color: #FFBAD2;
+       -o-border-radius:15px;
+       -moz-border-radius:15px;
+	  border-radius:15px;
+      padding: 10px;
+/*	  background-color: #FFBAD2;*/
 	  text-align: center;
 	  color: ghostwhite;
 	}
@@ -191,7 +214,7 @@
 
 	<div class="parent">
 	<div id="f1_container">
-	<div id="f1_card" class="shadow">
+	<div id="f1_card" class="shadow"style="background-color:#eee;">
 	  <div class="front face" style="background:url('will.png'); -webkit-border-radius:15px!important;">
 	    <!-- <img src="will.png"/> -->
 	  </div>

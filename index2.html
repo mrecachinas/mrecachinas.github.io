@@ -6,15 +6,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Projects | Michael Recachinas</title>
+        <title>Michael Recachinas</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="../css/normalize.min.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/slidezone.css">
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-        
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/slidezone.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -25,7 +25,7 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">
-                <a href="../">
+                <a href="/">
                     <span id="battery">
                         <span id="i_begin">I</span>
                         <span id="i_one">I</span>
@@ -37,10 +37,14 @@
                 </a>
                 </h1>
                 <nav>
+                    <div id="searchbar">
+                        <input type="submit" value="search"/>
+                    </div>
                     <ul>
-                        <li><a class="navlink" href="../about/">about</a></li>
-                        <li><a class="navlink"href="../projects/">projects</a></li>
-                        <li><a class="navlink"href="../resume/">resumé</a></li>
+                        <li><a class="navlink" href="about/">about</a></li>
+                        <li><a class="navlink"href="projects/">projects</a></li>
+                        <li><a class="navlink"href="resume/">resumé</a></li>
+                        <li id="search">\</li>
                     </ul>
                 </nav>
             </header>
@@ -53,28 +57,12 @@
 
                 <article>
                     <header>
-                        <h1>Projects</h1>
-                        <p></p>
+                        <h1>Welcome</h1>
+                        <p>This is Mike's new page, blog, intrawebz, or whatever you prefer!</p>
                     </header>
-                    <section id="camp">
-                        <h2>CampSummerset.com</h2>
-                        <p>Real sold my in call. Invitation on an advantages collecting. But event old above shy bed noisy. Had sister see wooded favour income has. Stuff rapid since do as hence. Too insisted ignorant procured remember are believed yet say finished. </p>
-
-                        <p>Two assure edward whence the was. Who worthy yet ten boy denote wonder. Weeks views her sight old tears sorry. Additions can suspected its concealed put furnished. Met the why particular devonshire decisively considered partiality. Certain it waiting no entered is. Passed her indeed uneasy shy polite appear denied. Oh less girl no walk. At he spot with five of view. </p>
-                    </section>
-                    <section id="lrs">
-                        <h2>redschoolhouse.org</h2>
-                        <p>Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight out few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty entire figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled. Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour if pretended. </p>
-
-                        <p>Considered discovered ye sentiments projecting entreaties of melancholy is. In expression an solicitude principles in do. Hard do me sigh with west same lady. Their saved linen downs tears son add music. Expression alteration entreaties mrs can terminated estimating. Her too add narrow having wished. To things so denied admire. Am wound worth water he linen at vexed. </p>
-
-                        <p>Rank tall boy man them over post now. Off into she bed long fat room. Recommend existence curiosity perfectly favourite get eat she why daughters. Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have. </p>
-                    </section>
-                    <section id="msoft">
-                        <h2>Windows 8 Apps</h2>
-                        <p>Considered discovered ye sentiments projecting entreaties of melancholy is. In expression an solicitude principles in do. Hard do me sigh with west same lady. Their saved linen downs tears son add music. Expression alteration entreaties mrs can terminated estimating. Her too add narrow having wished. To things so denied admire. Am wound worth water he linen at vexed. </p>
-
-                        <p>Rank tall boy man them over post now. Off into she bed long fat room. Recommend existence curiosity perfectly favourite get eat she why daughters. Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have. </p>
+                    <section>
+                        <h2>A little about Mike</h2>
+                        <p>Mike Recachinas is an entrepreneurial electrical engineering and computer science double major with a passion for web development.<br><br>Mike loves getting his hands dirty in some low-level languages, but he has a soft spot for high-level languages too. He has experience in x86 assembly, C, C++, Python, Ruby, Java, JavaScript, CoffeeScript, and most recently Haskell. His interests include big data, machine learning, and front end design.<br><br>His electrical engineering interests include optics and lasers, VLSI, and microwaves/RF design.</p>
                     </section>
                 </article>
 
@@ -124,6 +112,43 @@
              //        $(this).removeClass('fade').addClass('navlink');
              //    });
              // });
+
+            $(document).ready(function(){
+                // $('.navlink').mouseenter(function(){
+                //   animate({ borderTopColor: '#59b4de', borderLeftColor: '#59b4de', borderRightColor: '#59b4de', borderBottomColor: '#59b4de' }, 'fast');
+                // });
+
+                $('navlink').mouseover(function(){
+                    $(this).animate({
+                        borderBottomColor: '#D8D8D8'
+                        }, 1000, function() {
+                        });
+                    });
+                });​
+
+
+                // $('.navlink').hover(function(){
+                //         $(this).animate({ borderBottomColor: '#D8D8D8' });
+                //     }, function() {
+                //         $(this).animate({ borderBottomColor: 'transparent' });
+                //     });
+
+                //Fading Border
+                // $(".navlink").hover(function(){
+                // $(this).stop().animate({"backgroundColor" : "#40331b"}, 400);
+                // }, function(){
+                //     $(this).stop().animate({"backgroundColor" : "#79694C"}, 400);
+                // });
+                //Opacity Focus
+                $("ul li").hover(function() {
+                    $(this).siblings().stop().fadeTo(400,0.4);
+                }, function() {
+                    $(this).siblings().stop().fadeTo(400,1);
+                }
+                );
+
+            });
+
         </script>
     </body>
 </html>

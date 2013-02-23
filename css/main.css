@@ -14,6 +14,8 @@ body {
     font-size: 1em;
     line-height: 1.4;
     background:ghostwhite;
+    font-family:Helvetica, Helvetica Neue, sans-serif;
+    font-weight:100;
 }
 
 ::-moz-selection {
@@ -159,17 +161,80 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*.title{
+    text-transform:lower case;
+}*/
 
-
-h1{
-    font-weight:lighter;
+*{
+    -webkit-font-smoothing:antialiased;
 }
 
+
+@font-face
+{
+font-family: sosa;
+src: url('sosa.ttf'),
+     url('sosa.eot'); /* IE9+ */
+}
+#searchbar{
+    display:none;
+    width:50px;
+    top:500px;
+}
+#search{
+    font-family:sosa;
+    font-size:1.2em;
+    width:6%;
+    padding-top:24px;
+    height:24px;
+    color:#888;    
+    -webkit-transition: all .1s;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+.main-container{
+    /*box-shadow:0px 0px 20px 5px #777;*/
+    box-shadow:0px -7px 20px -7px #333;
+    -moz-box-shadow:0px -7px 20px -7px #333;
+    -o-box-shadow:0px -7px 20px -7px #333;
+    -webkit-box-shadow:0px -7px 20px -7px #333;
+    -ms-box-shadow:0px -7px 20px -7px #333;
+}
+h1{
+    font-weight:100;
+    letter-spacing:1px;
+    color:#444;
+}
+h2{
+    font-weight:100;
+    letter-spacing:1px;
+    color:#444;
+}
 nav a{
-    font-weight:lighter;
+    font-weight:100;
+    letter-spacing:1px;
 }
 nav a:hover{
-    text-decoration: underline;
+    color:#000;
+    text-decoration:none;
+}
+nav li{
+    /*height:0%;*/
+    padding-bottom:6px;
+    border-bottom:1px solid transparent;
+}
+nav li:hover{
+    /*border-bottom:1px solid #333;*/
+}
+a{
+    text-decoration: none;
+    color:#eee;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
 
 }
 
@@ -189,10 +254,10 @@ li{
 }  
   
 a{  
-    color:#FFF;  
+    color:#ccc;  
     text-decoration:none;  
 }  
-  
+
 p{  
     padding:0px 5px;  
 }  
@@ -200,19 +265,95 @@ p{
     .subtext{  
         padding-top:15px;  
     }  
-  
-/*Menu Color Classes*/  
-.green{background:#6AA63B;overflow: hidden; height: 50px; display: block;}  
-.yellow{background:#FBC700;}  
-.red{background:#D52100;}  
-.purple{background:#5122B4;}  
-.blue{background:#0292C0;}  
 
+footer{
+    color:#ccc;
+    font-weight:100;
+}
 
+.header-container > header{
+    user-select:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
 
+#battery{
+    -webkit-transition: color .6s;
+    -moz-transition: color .6s;
+    -o-transition: color .6s;
+    transition: color .6s;
+}
 
+#i_begin{
+    font-size:.75em;
+    font-weight:400;
+    position:relative;
+    left:12px;
+    top:-3px;
+/*    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;*/
+}
 
+#i_one{
+    position:relative;
+/*    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;*/
+}
+#i_two{
+    font-size:.75em;
+    font-weight:400;
+    position:relative;
+    top:-3px;
+    left:-12px;
+/*    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;*/
+}
+#i_three{
+    position:relative;
+    left:-24px;
+/*    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;*/
+    z-index:5;
+    /*opacity: .8;*/
+}
+#r_four{
+    position:relative;
+    /*opacity:.8;*/
+    z-index:1;
+    /*top:-5px;*/
+    left:-43px;
+/*    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;   */ 
 
+}
+/*#i_begin:hover{
+    color:black;
+}
+#i_one:hover{
+    color:black;
+}
+#i_two:hover{
+    color:black;
+}
+#i_three:hover{
+    color:black;
+}*/
+#battery:hover{
+    color:#777;
+}
 
 
 /* ==========================================================================
