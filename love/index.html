@@ -27,7 +27,7 @@
 		padding-top:20px;
 		font-size:3.5em;
 		/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
-		font-family:"Myriad Pro";
+		font-family:"Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;
 		letter-spacing:1px;
    		font-weight: 200;
    		-webkit-font-smoothing: antialiased;
@@ -293,6 +293,8 @@
 </body>
 
 <script>
-
+if (!("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " no-touch";
+}
 </script>
 </html>
