@@ -167,6 +167,7 @@ nav a:hover {
 
 *{
     -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
 }
 
 
@@ -175,23 +176,6 @@ nav a:hover {
 font-family: sosa;
 src: url('sosa.ttf'),
      url('sosa.eot'); /* IE9+ */
-}
-#searchbar{
-    display:none;
-    width:50px;
-    top:500px;
-}
-#search{
-    font-family:sosa;
-    font-size:1.2em;
-    width:6%;
-    padding-top:24px;
-    height:24px;
-    color:#888;    
-    -webkit-transition: all .1s;
-    -moz-transition: all .6s;
-    -o-transition: all .6s;
-    transition: all .6s;
 }
 
 .main-container{
@@ -226,7 +210,7 @@ nav li{
     border-bottom:1px solid transparent;
 }
 nav li:hover{
-    /*border-bottom:1px solid #333;*/
+    border-bottom:1px solid #333;
 }
 a{
     text-decoration: none;
@@ -251,7 +235,7 @@ li{
     color:#191919;  
     text-align:center;  
     overflow:hidden;  
-}  
+} 
   
 a{  
     color:#ccc;  
@@ -354,7 +338,50 @@ footer{
 #battery:hover{
     color:#777;
 }
+#myname{
+    font-family:"Raleway",sans-serif;
+    font-weight:600;
+}
 
+.search{
+   background:url("http://mikereca.co/img/search.png") no-repeat;
+   background-size:36px 34px;
+   background-color:ghostwhite;
+   position:absolute; 
+   width:20px;
+   height:20px;
+   right:20px;
+   top:20px;
+   -webkit-transition: all .5s cubic-bezier(.93, .71, .58, 1);
+   border-radius:50px;
+   font-size:1em;
+   text-align:center;
+   padding:10px;
+   border:1px solid ghostwhite;
+   color:#777;
+   font-family:inherit;
+   font-weight:100;
+   letter-spacing:1px;
+}
+
+.search:hover, .search:focus{
+   /*background-color:blue;*/
+   background-color:ghostwhite;
+   width:210px;
+   text-align:left;
+   outline:none;
+   padding-left:3%;
+   font-size:1.4em;
+   box-shadow:0 1px 10px #777; 
+   border-bottom:none;
+}
+
+/*.header-container>header{
+    position:relative;
+}*/
+nav{
+    position:relative;
+}
 
 /* ==========================================================================
    Media Queries
