@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Love | Mike Recachinas</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+@import url("http://fonts.googleapis.com/css?family=Niconne");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-font-smoothing:antialiased;
+}
+
+:before, :after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: white;
+}
+
+.landscape {
+  position: relative;
+  z-index: 1;
+  height: 600px;
+  background: linear-gradient(to bottom, #0f1e2d 0%, #224466 100%);
+  overflow: hidden;
+}
+
+.landscape div {
+  position: absolute;
+}
+
+.moon {
+  position: absolute;
+  left: 55%;
+  bottom: 300px;
+  width: 200px;
+  height: 200px;
+  margin: 0 0 0 -300px;
+  border-radius: 50%;
+  background: #ffffaa;
+}
+
+.level1 {
+  left: 50%;
+  bottom: 0;
+}
+
+.level2 {
+  left: 50%;
+  bottom: -50px;
+  margin-left: -100px;
+}
+
+.level3 {
+  left: 50%;
+  bottom: -150px;
+}
+
+.tree {
+  bottom: 0;
+  left: 50%;
+  width: 170px;
+  height: 450px;
+}
+
+.tree:nth-child(1) {
+  margin-left: -700px;
+}
+
+.tree:nth-child(2) {
+  margin-left: -500px;
+}
+
+.tree:nth-child(3) {
+  margin-left: -300px;
+}
+
+.tree:nth-child(4) {
+  margin-left: -100px;
+}
+
+.tree:nth-child(5) {
+  margin-left: 100px;
+}
+
+.tree:nth-child(6) {
+  margin-left: 300px;
+}
+
+.tree:nth-child(7) {
+  margin-left: 500px;
+}
+
+.tree:nth-child(8) {
+  margin-left: 700px;
+}
+
+.t:before,
+.t:after {
+  width: 0;
+  height: 0;
+  border: solid transparent;
+}
+
+.level1 .t:before,
+.level1 .t:after {
+  border-bottom-color: #09111a;
+}
+
+.level2 .t:before,
+.level2 .t:after {
+  border-bottom-color: #0e1b29;
+}
+
+.level3 .t:before,
+.level3 .t:after {
+  border-bottom-color: #132538;
+}
+
+.t:nth-child(1):before {
+  bottom: -450px;
+  left: 0;
+  border-width: 170px 85px;
+}
+
+.t:nth-child(1):after {
+  bottom: -425px;
+  left: 5px;
+  border-width: 160px 80px;
+}
+
+.t:nth-child(2):before {
+  bottom: -400px;
+  left: 10px;
+  border-width: 150px 75px;
+}
+
+.t:nth-child(2):after {
+  bottom: -375px;
+  left: 15px;
+  border-width: 140px 70px;
+}
+
+.t:nth-child(3):before {
+  bottom: -350px;
+  left: 20px;
+  border-width: 130px 65px;
+}
+
+.t:nth-child(3):after {
+  bottom: -325px;
+  left: 25px;
+  border-width: 120px 60px;
+}
+
+.t:nth-child(4):before {
+  bottom: -300px;
+  left: 30px;
+  border-width: 110px 55px;
+}
+
+.t:nth-child(4):after {
+  bottom: -275px;
+  left: 35px;
+  border-width: 100px 50px;
+}
+
+.t:nth-child(5):before {
+  bottom: -250px;
+  left: 40px;
+  border-width: 90px 45px;
+}
+
+.t:nth-child(5):after {
+  bottom: -225px;
+  left: 45px;
+  border-width: 80px 40px;
+}
+
+.t:nth-child(6):before {
+  bottom: -200px;
+  left: 50px;
+  border-width: 70px 35px;
+}
+
+.t:nth-child(6):after {
+  bottom: -175px;
+  left: 55px;
+  border-width: 60px 30px;
+}
+
+.t:nth-child(7):before {
+  bottom: -150px;
+  left: 60px;
+  border-width: 50px 25px;
+}
+
+.t:nth-child(7):after {
+  bottom: -125px;
+  left: 65px;
+  border-width: 40px 20px;
+}
+
+.t:nth-child(8):before {
+  bottom: -100px;
+  left: 70px;
+  border-width: 30px 15px;
+}
+
+.t:nth-child(8):after {
+  bottom: -80px;
+  left: 75px;
+  border-width: 20px 10px;
+}
+
+.text {
+  left: 50%;
+  bottom: 0;
+  width: 1000px;
+  margin: 0 0 -15px -500px;
+  font: 80px/1 'Niconne', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.footprints {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 0 0 -500px;
+}
+
+.f {
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  border-radius: 50%;
+  background: #cccccc;
+  box-shadow: -10px -10px 0 #cccccc;
+}
+
+.f:nth-child(1) {
+  top: 2.5px;
+  left: 10px;
+}
+
+.f:nth-child(2) {
+  top: 5px;
+  left: 30px;
+}
+
+.f:nth-child(3) {
+  top: 7.5px;
+  left: 50px;
+}
+
+.f:nth-child(4) {
+  top: 10px;
+  left: 70px;
+}
+
+.f:nth-child(5) {
+  top: 12.5px;
+  left: 90px;
+}
+
+.f:nth-child(6) {
+  top: 15px;
+  left: 110px;
+}
+
+.f:nth-child(7) {
+  top: 17.5px;
+  left: 130px;
+}
+
+.f:nth-child(8) {
+  top: 20px;
+  left: 150px;
+}
+
+.f:nth-child(9) {
+  top: 22.5px;
+  left: 170px;
+}
+
+.f:nth-child(10) {
+  top: 25px;
+  left: 190px;
+}
+
+.f:nth-child(11) {
+  top: 27.5px;
+  left: 210px;
+}
+
+.f:nth-child(12) {
+  top: 30px;
+  left: 230px;
+}
+
+.f:nth-child(13) {
+  top: 32.5px;
+  left: 250px;
+}
+
+.f:nth-child(14) {
+  top: 35px;
+  left: 270px;
+}
+
+.f:nth-child(15) {
+  top: 37.5px;
+  left: 290px;
+}
+
+.f:nth-child(16) {
+  top: 40px;
+  left: 310px;
+}
+
+.f:nth-child(17) {
+  top: 42.5px;
+  left: 330px;
+}
+
+.f:nth-child(18) {
+  top: 45px;
+  left: 350px;
+}
+
+.f:nth-child(19) {
+  top: 47.5px;
+  left: 370px;
+}
+
+.f:nth-child(20) {
+  top: 50px;
+  left: 390px;
+}
+
+.f:nth-child(21) {
+  top: 52.5px;
+  left: 410px;
+}
+
+.f:nth-child(22) {
+  top: 55px;
+  left: 430px;
+}
+
+.f:nth-child(23) {
+  top: 57.5px;
+  left: 450px;
+}
+
+.f:nth-child(24) {
+  top: 60px;
+  left: 470px;
+}
+
+.f:nth-child(25) {
+  top: 62.5px;
+  left: 490px;
+}
+
+.f:nth-child(26) {
+  top: 65px;
+  left: 510px;
+}
+
+.f:nth-child(27) {
+  top: 67.5px;
+  left: 530px;
+}
+
+.f:nth-child(28) {
+  top: 70px;
+  left: 550px;
+}
+
+.f:nth-child(29) {
+  top: 72.5px;
+  left: 570px;
+}
+
+.f:nth-child(30) {
+  top: 75px;
+  left: 590px;
+}
+
+.f:nth-child(31) {
+  top: 77.5px;
+  left: 610px;
+}
+
+.f:nth-child(32) {
+  top: 80px;
+  left: 630px;
+}
+
+.f:nth-child(33) {
+  top: 82.5px;
+  left: 650px;
+}
+
+.f:nth-child(34) {
+  top: 85px;
+  left: 670px;
+}
+
+.f:nth-child(35) {
+  top: 87.5px;
+  left: 690px;
+}
+
+.f:nth-child(36) {
+  top: 90px;
+  left: 710px;
+}
+
+.f:nth-child(37) {
+  top: 92.5px;
+  left: 730px;
+}
+
+.f:nth-child(38) {
+  top: 95px;
+  left: 750px;
+}
+
+.f:nth-child(39) {
+  top: 97.5px;
+  left: 770px;
+}
+
+.f:nth-child(40) {
+  top: 100px;
+  left: 790px;
+}
+
+.f:nth-child(41) {
+  top: 102.5px;
+  left: 810px;
+}
+
+.f:nth-child(42) {
+  top: 105px;
+  left: 830px;
+}
+
+.f:nth-child(43) {
+  top: 107.5px;
+  left: 850px;
+}
+
+.f:nth-child(44) {
+  top: 110px;
+  left: 870px;
+}
+
+.f:nth-child(45) {
+  top: 112.5px;
+  left: 890px;
+}
+
+.f:nth-child(46) {
+  top: 115px;
+  left: 910px;
+}
+
+.f:nth-child(47) {
+  top: 117.5px;
+  left: 930px;
+}
+
+.f:nth-child(48) {
+  top: 120px;
+  left: 950px;
+}
+
+.f:nth-child(49) {
+  top: 122.5px;
+  left: 970px;
+}
+
+.f:nth-child(50) {
+  top: 125px;
+  left: 990px;
+}
+
+.f:nth-child(51) {
+  top: 127.5px;
+  left: 1010px;
+}
+
+.f:nth-child(52) {
+  top: 130px;
+  left: 1030px;
+}
+
+.f:nth-child(53) {
+  top: 132.5px;
+  left: 1050px;
+}
+
+.f:nth-child(54) {
+  top: 135px;
+  left: 1070px;
+}
+
+.f:nth-child(55) {
+  top: 137.5px;
+  left: 1090px;
+}
+
+.f:nth-child(56) {
+  top: 140px;
+  left: 1110px;
+}
+
+.f:nth-child(57) {
+  top: 142.5px;
+  left: 1130px;
+}
+
+.f:nth-child(58) {
+  top: 145px;
+  left: 1150px;
+}
+
+.f:nth-child(59) {
+  top: 147.5px;
+  left: 1170px;
+}
+
+.f:nth-child(60) {
+  top: 150px;
+  left: 1190px;
+}
+
+.f:nth-child(61) {
+  top: 152.5px;
+  left: 1210px;
+}
+
+.f:nth-child(62) {
+  top: 155px;
+  left: 1230px;
+}
+
+.f:nth-child(63) {
+  top: 157.5px;
+  left: 1250px;
+}
+
+.f:nth-child(64) {
+  top: 160px;
+  left: 1270px;
+}
+
+.f:nth-child(65) {
+  top: 162.5px;
+  left: 1290px;
+}
+
+.f:nth-child(66) {
+  top: 165px;
+  left: 1310px;
+}
+
+.f:nth-child(67) {
+  top: 167.5px;
+  left: 1330px;
+}
+
+.f:nth-child(68) {
+  top: 170px;
+  left: 1350px;
+}
+
+.f:nth-child(69) {
+  top: 172.5px;
+  left: 1370px;
+}
+
+.f:nth-child(70) {
+  top: 175px;
+  left: 1390px;
+}
+
+.f:nth-child(71) {
+  top: 177.5px;
+  left: 1410px;
+}
+
+.f:nth-child(72) {
+  top: 180px;
+  left: 1430px;
+}
+
+.f:nth-child(73) {
+  top: 182.5px;
+  left: 1450px;
+}
+
+.f:nth-child(74) {
+  top: 185px;
+  left: 1470px;
+}
+
+.f:nth-child(75) {
+  top: 187.5px;
+  left: 1490px;
+}
+
+.f:nth-child(76) {
+  top: 190px;
+  left: 1510px;
+}
+
+.f:nth-child(77) {
+  top: 192.5px;
+  left: 1530px;
+}
+
+.f:nth-child(78) {
+  top: 195px;
+  left: 1550px;
+}
+
+.f:nth-child(79) {
+  top: 197.5px;
+  left: 1570px;
+}
+
+.f:nth-child(80) {
+  top: 200px;
+  left: 1590px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Codepen Preview Mode */
+@media only screen and (height: 300px) {
+  .landscape {
+    margin-top: -320px;
+  }
+}
+
+	</style>
+</head>
+
+<body>
+<div class='landscape'>
+  <div class='moon'></div>
+  <div class='level1'>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+  </div>
+  <div class='level2'>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+  </div>
+  <div class='level3'>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+    <div class='tree'>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+      <div class='t'></div>
+    </div>
+  </div>
+  <div class='text'>
+    Merry Christmas Mom & Dad
+  </div>
+</div>
+<div class='footprints'>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+  <div class='f'></div>
+</div>
+<canvas id='cvs'></canvas>
+</body>
+
+<script>
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          window.oRequestAnimationFrame      ||
+          window.msRequestAnimationFrame     ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
+
+var canvas = document.getElementById('cvs'),
+  ctx = canvas.getContext('2d'),
+  height = canvas.height = document.body.offsetHeight,
+  width = canvas.width = document.body.offsetWidth,
+  collection = [],
+  num_drops = 1000,
+  gravity = 1,
+  windforce = 1,
+  windmultiplier = 0,
+  maxspeed = 5,
+  gutter = 0;
+
+function Drop() {
+  this.x;
+  this.y;
+  this.radius;
+  this.distance;
+  this.color;
+  this.speed;
+  this.vx;
+  this.vy;
+}
+Drop.prototype = {
+  constructor: Drop,
+  
+  random_x: function() {
+    var n = width * (1 + gutter);
+    return (1 - (1 + gutter)) + (Math.random() * n);
+  },
+  draw: function(ctx) {
+    ctx.fillStyle = this.color;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+    ctx.closePath();
+    ctx.fill();
+  }
+};
+
+function draw_frame() {
+  ctx.clearRect(0, 0, width, height);
+  collection.forEach(function (drop) {
+    ctx.globalAlpha = (drop.distance + 1) / 10; 
+    drop.draw(ctx);
+    ctx.globalAlpha = 1;
+    drop.x += drop.vx;
+    drop.y += drop.vy;
+    var lx = drop.vx + windforce;
+    lx < maxspeed && lx > 1 - maxspeed && (drop.vx = lx);
+    if (drop.y > (drop.distance + 1) / 10 * height) {
+      drop.y = Math.random() * -drop.radius * (num_drops / 10);
+      drop.x = drop.random_x();
+    }
+    if (drop.x > width * (1 + gutter)) {
+      drop.x = 1 - (width * gutter);
+    }
+    if (drop.x < 1 - (width * gutter)) {
+      drop.x = width * (1 + gutter);
+    }
+  });
+}
+
+function animate() {
+  requestAnimFrame(animate);
+  draw_frame();
+}
+
+function windtimer() {
+  windforce = Math.random() > 0.5 ? windmultiplier : -windmultiplier;
+  setTimeout(windtimer, Math.random() * (1000 * 30));
+}
+
+function init() {
+  collection = [];
+  while (num_drops--) {
+    var drop = new Drop();
+    drop.color = "#fff";
+    drop.distance = Math.random() * 10 | 0;
+    drop.speed = Math.random() * (drop.distance / 10) + gravity;
+    drop.vx = 0;
+    drop.vy = Math.random() * drop.speed + (drop.speed / 2);
+    drop.radius = (drop.distance + 1) / 16 * 3;
+    drop.x = drop.random_x();
+    drop.y = Math.random() * height;
+    collection.push(drop);
+  }
+  windtimer();
+  animate();
+  window.onresize = function() {
+    height = canvas.height = document.body.offsetHeight;
+    width = canvas.width = document.body.offsetWidth;
+  };
+}
+
+init();
+</script>
+</html>
