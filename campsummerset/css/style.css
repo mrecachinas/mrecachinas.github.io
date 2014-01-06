@@ -1,0 +1,288 @@
+@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand|Sacramento);
+
+#gmt {
+	font-family:'Just Another Hand',cursive;
+	font-size:2.3em;
+}
+#msk {
+	font-family:'Sacramento',cursive;
+	font-size:2.3em;
+}
+
+h5#emph{
+	font-weight:bold;
+	border:1px dashed black;
+}
+
+#front-page{
+	color:black;
+}
+
+#imp {
+	border:3px dashed red;
+}
+
+table {
+    margin: 0 auto; /* or margin: 0 auto 0 auto */
+    font-size:1.5em;
+}
+
+.reg-tab {
+	width:100%;
+}
+tr:hover{
+	background:#ddd!important;
+}
+
+.reg-tab tr, .reg-tab th{
+	text-align:center;
+}
+
+#strong-todo{
+	text-align:left;
+	background:#ffbf00;
+	font-size:1.5em;
+	padding:10px;
+	box-shadow:0 0 3px;
+	-webkit-box-shadow:0 0 3px;
+	-moz-box-shadow:0 0 3px;
+	-o-box-shadow:0 0 3px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+#quote{
+	background:#ffbf00;
+	padding:10px;
+	box-shadow:0 0 3px;
+	-webkit-box-shadow:0 0 3px;
+	-moz-box-shadow:0 0 3px;
+	-o-box-shadow:0 0 3px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+/*#quote:after{
+	position: relative;
+    top: 45%;
+    left: 50%;
+    margin-left: -50%;
+    margin-top:-50%;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-bottom: solid 25px red;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+}*/
+
+#strong{
+	background:#ffbf00;
+	font-size:1.5em;
+	padding:10px;
+	box-shadow:0 0 3px;
+	-webkit-box-shadow:0 0 3px;
+	-moz-box-shadow:0 0 3px;
+	-o-box-shadow:0 0 3px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+#homepage-hero {
+	/*background:url('http://www.fillmurray.com/1440/650');*/
+	height:650px;
+	/*box-shadow:0 0 10px;*/
+}
+
+.top-bar-section li a:not(.button).active {
+	background:#085BAF!important;
+}
+
+#home_caption {
+	margin-top:200px;
+	background:rgba(50, 228, 35, 0.7);
+/*	box-shadow:0 0 10px;
+	-webkit-box-shadow:0 0 10px;
+	-moz-box-shadow:0 0 10px;
+	-o-box-shadow:0 0 10px;*/
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+#contact-hero {
+	/*background:url('../img/maps.png');*/
+	background-size:cover;
+	height:500px;
+}
+#staff-hero {
+	background:url('../img/staff.png');
+	background-size:cover;
+	height:500px;
+}
+#about-hero {
+	background:url('../img/about.png');
+	/*background-size:cover;*/
+	background-size:cover;
+	height:500px;
+}
+#register-hero{
+	background:url('../img/reg.png');
+	background-size:cover;
+	height:500px;
+}
+
+#about_content h2{
+	/*background:rgb(50, 228, 35);*/
+	color:black;
+}
+
+#contact-hero h3,#contact-hero h1 {
+	color:black;
+}
+
+#caption_contact {
+	/*position:absolute;*/
+	background:#f8f8ff;
+	opacity:.7;
+	z-index:10000;
+	margin-top:100px;
+	/*margin-left:15px;*/
+/*	box-shadow:0 0 10px;
+	-webkit-box-shadow:0 0 10px;
+	-moz-box-shadow:0 0 10px;
+	-o-box-shadow:0 0 10px;*/
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+#caption_about{
+	background:rgba(50, 228, 35, 0.7);
+	margin-top:100px;
+/*	box-shadow:0 0 10px;
+	-webkit-box-shadow:0 0 10px;
+	-moz-box-shadow:0 0 10px;
+	-o-box-shadow:0 0 10px;*/
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+.head {
+	border-radius:100%;
+	width:220px;
+	height:220px;
+	/*box-shadow:0 0 5px;*/
+	border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	transition:tada;
+}
+.head:hover {
+	animation: tada 1s;
+	-webkit-animation: tada 1s;
+	-moz-animation:tada 1s;
+	-o-animation:tada 1s;
+	-ms-animation:tada 1s;
+}
+
+@-webkit-keyframes tada {
+	0% {-webkit-transform: scale(1);}	
+	10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+	100% {-webkit-transform: scale(1) rotate(0);}
+}
+
+@-moz-keyframes tada {
+	0% {-moz-transform: scale(1);}	
+	10%, 20% {-moz-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-moz-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-moz-transform: scale(1.1) rotate(-3deg);}
+	100% {-moz-transform: scale(1) rotate(0);}
+}
+
+@-o-keyframes tada {
+	0% {-o-transform: scale(1);}	
+	10%, 20% {-o-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-o-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-o-transform: scale(1.1) rotate(-3deg);}
+	100% {-o-transform: scale(1) rotate(0);}
+}
+
+@keyframes tada {
+	0% {transform: scale(1);}	
+	10%, 20% {transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+	100% {transform: scale(1) rotate(0);}
+}
+
+.tada {
+	-webkit-animation-name: tada;
+	-moz-animation-name: tada;
+	-o-animation-name: tada;
+	animation-name: tada;
+}
+
+.zurb-footer-top.bg-fblue{
+	text-align:center;
+	margin-bottom:30px;
+	margin-top:10px;
+}
+#contact_people {
+	text-align:center;
+}
+#contact_people h4, #contact_people h5, #contact_people h3 {
+	/*background:;*/
+	color:black!important;
+}
+
+.zurb-footer-top.bg-fblue{
+	font-weight:200;
+}
+
+.logo {
+	width:200px;
+	z-index:9000;
+	position:fixed;
+	/*height:50px;*/
+}
+
+@media only screen and (max-width: 40.063em) {
+	.logo{
+		position:relative;
+	}
+}
+
+#about_content li {
+	text-align:left;
+	margin:0 5%;
+}
+
+.staff {
+	background:#ffbf00;
+	font-size:1.5em;
+	padding:10px;
+	box-shadow:0 0 3px;
+	-webkit-box-shadow:0 0 3px;
+	-moz-box-shadow:0 0 3px;
+	-o-box-shadow:0 0 3px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+}
