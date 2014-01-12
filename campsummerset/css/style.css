@@ -289,12 +289,12 @@ ul.example-orbit.orbit-slides-container{
 		position:relative;
 		background:rgb(50, 228, 35);
 	}
-/*	#register {
-		position: relative;
-		margin-top:0%;
-	}*/
 	#other-quotes {
 		margin-top:0;
+	}
+	.modal-course {
+		width:100%;
+		margin:0;
 	}
 }
 
@@ -344,4 +344,34 @@ blockquote {
 
 #cityventures {
 
+}
+
+#minnows td, #minicamp td, #juniors td, #seniors td, #cityventures td {
+	cursor:pointer;
+}
+
+.modal-container {
+	z-index:90000000;
+	position:fixed;
+	display:none;
+	background:rgba(40,40,40,0.5);
+	width:100%;
+	height:100%;
+}
+.modal-course {
+	position:relative;
+	margin:0 auto;
+	width:50%;
+	height:500px;
+	padding:25px;
+	background:white;
+	-webkit-box-shadow:0 0 20px #444;
+	-moz-box-shadow:0 0 20px #444;
+	-o-box-shadow:0 0 20px #444;
+	box-shadow:0 0 20px #444;
+}
+.modal-course > h2{
+	color:black;
+	text-align:center;
+	overflow:scroll;
 }

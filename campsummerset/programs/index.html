@@ -11,13 +11,10 @@
   </head>
 <body>
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=257781267581967";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<div class="modal-container">
+  <div class="modal-course">
+  </div>
+</div>
     <div class="off-canvas-wrap">
       <div class="inner-wrap">
         <aside class="left-off-canvas-menu">
@@ -104,7 +101,7 @@
   </section>
 </nav>
 
-        
+
 
 
 
@@ -619,6 +616,147 @@
     <script src="../js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+    </script>
+    <script>
+var class_list = {
+  'Magic': {
+    desc: 'The vanishing coin!  The levitating ring!  Mind reading!  The cut and restored string! Amaze and impress your friends with magic tricks learned in this cool new class.  From card tricks to sleight of hands, campers will learn simple and classic, yet effective and exciting magic tricks.',
+    teacher:'Ira Richardson',
+    session:['2']
+  },
+
+  'Wacky Wilderness': {
+    desc: 'Heed the call of nature and leave the city behind in this exciting new class. With favorite Camp teacher Ira Richardson, campers will learn wilderness survival skills, from identifying edible plants, building shelter, tracking wild animals, and making their own clothes.  Learn animal behavior and habitats.  Read the signs nature gives us and use the stars to navigate.',
+    teacher:'',
+    session:''
+  },
+
+  'Music: Broadway!': {
+    desc: 'Give your regards to Broadway!  From the Phantom of the Opera to the Lion King, from Oliver to Annie, from West Side Story to Peter Pan, campers will learn about the songs and music that have made Broadway great.  Through two weeks of fun, learning, and rehearsals, campers will select famous Broadway musical numbers and prepare to put on a culminating show at the end of the Session.',
+    teacher:'Carolyn Morgan',
+    session:['1']
+  },
+
+  'Computers: Graphic Design': {
+    desc:'Using the graphic programs KidPix, Pixie, Pixlr and more, kids will let their visual creativity and imagination run wild.  Through a series of themes and focuses, campers will hone specific skills.  At the end of the session they will be the stars of their own digital art show.',
+    teacher:'Yuna Choi',
+    session:['1']
+  },
+
+  'Spanish: Fiestas y Viajes': {
+    desc:'Each day campers will travel en espanol to another activity, festivity, or location, like the market, the movies, a party, the beach, the nature hike, shopping, the big game, school, or a friend’s house.  Campers learn Spanish vocabulary and phrases from beloved Somerset teacher, and native speaker, Kathy McIntosh, while engaging in various activities encountered during their travels.',
+    teacher:'Kathy McIntosh',
+    session:['2']
+  },
+
+  'Art: Clay Everyday': {
+    desc:'In Clay Everyday campers will be able to explore the many techniques and uses of clay. Projects will include functional pieces like bowls and cups, as well as projects that rely more on artistic experimentation.  While learning a range of clay techniques, campers will have free-range of how they want to interpret the theme to create their own pieces.',
+    teacher:'Claire Popovich',
+    session:['2']
+
+  },
+
+  'Art: Fun with Fibers': {
+    desc:'Campers will engage in a multitude of projects focusing on the many different types of fibrous materials including yarn, felt, and paper. Campers will learn things such as different methods of knitting, weaving, friendship bracelets, collage, origami, and many other things. ',
+    teacher:'Calire Popovich',
+    session:['1']
+  },
+
+  'Keyboarding': {
+    desc:'Back by popular demand, in this class campers will have fun while building success with important skill of keyboarding.  Whether for fun, or to enhance word-processing skills needed in school, campers will use the program Type to Learn.',
+    teacher:'Yuna Choi',
+    session:['1','2','3']
+  },
+
+  'Science: How Things Work': {
+    desc:'What powers cars?  How do wind-up toys work?  What do magnets and electricity have in common? How do skyscrapers and bridges stand up?  Through constructions and investigations, campers get at the heart of how the world works.',
+    teacher:'Hannah Rich',
+    session:['1']
+  },
+
+  'Science: Chemistry': {
+    desc:'It\'s Chemistry! In this class, filled with fun hands-on investigations, campers will study the science behind everyday chemical reactions and also discover the unexpected and dramatic things that can result when two substances come together. Who knows what campers will bring home today! As a culminating activity, campers will discover how adding salt to ice can allow for the making of a positively delicious creation!',
+    teacher:'Hannah Rich',
+    session:['3']
+  },
+
+  'Science: Force and Motion': {
+    desc:'Watch out!  Campers will be rolling, sliding, bouncing, and crashing objects as they explore the forces at work in the world around us.  From gravity, friction, inertia, and momentum to buoyancy and lift, campers will learn by having fun.  What makes planes fly and cars stay on the track? What makes bubbles float and bouncy balls bounce? Through an exciting series of hands-on investigations.',
+    teacher:'Hannah Rich',
+    session:['2']
+  },
+
+  'Music: Rhythms': {
+    desc:'Feel the beat of rhythms around the world with MCPS Music Teacher, Ms. Carolyn Morgan. Move, wiggle and jump with the music.  Drums, maracas, vibraphones, and tambourines are just a few of the instruments that campers will learn to use.   Campers will have a chance to show off their rhythms at the end of the session.',
+    teacher:'Carolyn Morgan',
+    session:['1']
+  },
+
+  'Music: Holidays and Happenings': {
+    desc:'Music is an integral part of festivities, celebrations, and holidays the world \'round.  In this class, campers will travel the globe to explore and experience the music most closely associated with a variety of cultures, religions, and nations.',
+    teacher:'Carolyn Morgan',
+    session:['2']
+  },
+
+  'Puppetry': {
+    desc:'A unique merger of the visual, craft, and performing arts, Puppetry is not just for kids!  In this fun and exciting class, campers will sample the globe\'s offering of puppetry construction and performance, from marionettes to hand puppets, to shadow puppets.  Campers will make examples of each kind of puppet studied, learning about different materials and construction techniques, and then put on a show!',
+    teacher:'Ira Richardson',
+    session:['2']
+  },
+
+  'Art: Modern Marvels' : {
+    desc:'The most exciting Art of the 20th Century is the focus of this class.  Think pop art prints, think cubism, think abstract art.  Warhol. Kandinsky. Picasso.  Pollock.   Campers will also break free of the canvas to explore modern sculpture and kinetic sculpture.',
+    teacher:'Claire Popovich',
+    session:['3'
+] },
+
+  'Computers: Camp News' : {
+    desc:'In this exciting computers class, campers will research, compose, and publish a weekly newspaper for and about Camp Summerset.  Combining the skills of interviewing, word-processing, layouts, graphic design, and publishing, Campers will cover the exciting goings-on around them.',
+    teacher:'Yuna Choi',
+    session:['3']
+  }
+
+  /**Missing:
+    Session 1:
+    Camp Games
+    Sports
+    Bead it
+    Computers (?)
+    Music: Name that Tune
+    Tennis
+
+
+    Session 2:
+    Digital Photography
+    Yoga
+    Book Nook Cafe
+    Sports
+    Computers (?)
+
+    Session 3:
+    Smores and Stories
+    Music (?)
+    Sports
+    Juggling & Yo-Yo's
+    Carnival
+    Theatre
+
+
+  */
+};
+
+    $('td').click(function(){
+      var camp_class = $(this).text();
+      console.log(camp_class)
+      console.log(class_list[camp_class] !== undefined)
+      if (class_list[camp_class] !== undefined) {
+        $('.modal-container').fadeIn(500);
+        $('.modal-course').html("<h2>Camp Summerset</h2><br><br><br><b>Class Name:</b> "+camp_class+"<br><br>"+"<b>Teacher:</b> "+class_list[camp_class].teacher+"<br><br><b>Session(s):</b> "+class_list[camp_class].session.join(',') + "<br><br><b>Description:</b> "+class_list[camp_class].desc);
+      }
+    });
+    $('.modal-container').click(function(){
+      $(this).fadeOut(500);
+    })
     </script>
   </body>
 </html>
