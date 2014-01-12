@@ -65,19 +65,21 @@ tr:hover{
 	-moz-border-radius:3px;
 	-o-border-radius:3px;
 }
-/*#quote:after{
-	position: relative;
-    top: 45%;
-    left: 50%;
-    margin-left: -50%;
-    margin-top:-50%;
-    content: ' ';
-    width: 0;
-    height: 0;
-    border-bottom: solid 25px red;
-    border-left: solid 15px transparent;
-    border-right: solid 15px transparent;
-}*/
+#quote2{
+	background:#5ede4d;
+	padding:10px;
+	box-shadow:0 0 3px;
+	-webkit-box-shadow:0 0 3px;
+	-moz-box-shadow:0 0 3px;
+	-o-box-shadow:0 0 3px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+#quote2 blockquote {
+	border-left:1px solid #000;
+}
 
 #strong{
 	background:#ffbf00;
@@ -104,7 +106,8 @@ tr:hover{
 }
 
 #home_caption {
-	margin-top:200px;
+	margin-top:-40%;
+	position:absolute;
 	background:rgba(50, 228, 35, 0.7);
 /*	box-shadow:0 0 10px;
 	-webkit-box-shadow:0 0 10px;
@@ -116,26 +119,37 @@ tr:hover{
 	-o-border-radius:3px;
 }
 
+#other-quotes {
+	margin-top:102px;
+}
+#other-quotes > h4 {
+	font-size:1.4375rem;
+}
+
+ul.example-orbit.orbit-slides-container{
+	height:600px!important;
+}
+
 #contact-hero {
 	/*background:url('../img/maps.png');*/
 	background-size:cover;
-	height:500px;
+	height:600px;
 }
 #staff-hero {
 	background:url('../img/staff.png');
 	background-size:cover;
-	height:500px;
+	height:600px;
 }
 #about-hero {
 	background:url('../img/about.png');
 	/*background-size:cover;*/
 	background-size:cover;
-	height:500px;
+	height:600px;
 }
 #register-hero{
 	background:url('../img/reg.png');
 	background-size:cover;
-	height:500px;
+	height:600px;
 }
 
 #about_content h2{
@@ -179,8 +193,8 @@ tr:hover{
 
 .head {
 	border-radius:100%;
-	width:220px;
-	height:220px;
+	width:100px;
+	height:100px;
 	/*box-shadow:0 0 5px;*/
 	border-radius: 100%;
     -webkit-border-radius: 100%;
@@ -265,6 +279,18 @@ tr:hover{
 	.logo{
 		position:relative;
 	}
+	#home_caption {
+		margin-top:0%;
+		position:relative;
+		background:rgb(50, 228, 35);
+	}
+/*	#register {
+		position: relative;
+		margin-top:0%;
+	}*/
+	#other-quotes {
+		margin-top:0;
+	}
 }
 
 #about_content li {
@@ -285,4 +311,8 @@ tr:hover{
 	-moz-border-radius:3px;
 	-o-border-radius:3px;
 }
+
+blockquote {
+	color:black;
+	/*background*/
 }
