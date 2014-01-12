@@ -78,7 +78,8 @@ tr:hover{
 	-o-border-radius:3px;
 }
 #quote2 blockquote {
-	border-left:1px solid #000;
+	/*border-left:1px solid #000;*/
+	border-left:none;
 }
 
 #strong{
@@ -320,6 +321,7 @@ ul.example-orbit.orbit-slides-container{
 blockquote {
 	color:black;
 	/*background*/
+	border-left:none;
 }
 
 #pgms {
