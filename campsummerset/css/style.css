@@ -131,7 +131,6 @@ ul.example-orbit.orbit-slides-container{
 }
 
 #contact-hero {
-	/*background:url('../img/maps.png');*/
 	background-size:cover;
 	height:600px;
 }
@@ -148,6 +147,12 @@ ul.example-orbit.orbit-slides-container{
 }
 #register-hero{
 	background:url('../img/reg.png');
+	background-size:cover;
+	height:600px;
+}
+
+#program-hero{
+	background:url('../img/programs.JPG');
 	background-size:cover;
 	height:600px;
 }
@@ -315,4 +320,28 @@ ul.example-orbit.orbit-slides-container{
 blockquote {
 	color:black;
 	/*background*/
+}
+
+#pgms {
+	text-align: left;
+}
+
+#minnows {
+
+}
+
+#minicamp {
+
+}
+
+#juniors {
+
+}
+
+#seniors {
+
+}
+
+#cityventures {
+
 }
