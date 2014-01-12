@@ -750,12 +750,12 @@ var class_list = {
       console.log(camp_class)
       console.log(class_list[camp_class] !== undefined)
       if (class_list[camp_class] !== undefined) {
-        $('.modal-container').fadeIn(500);
+        $('.modal-container').fadeIn(200);
         $('.modal-course').html("<h2>Camp Summerset</h2><br><br><br><b>Class Name:</b> "+camp_class+"<br><br>"+"<b>Teacher:</b> "+class_list[camp_class].teacher+"<br><br><b>Session(s):</b> "+class_list[camp_class].session.join(',') + "<br><br><b>Description:</b> "+class_list[camp_class].desc);
       }
     });
     $('.modal-container').click(function(){
-      $(this).fadeOut(500);
+      $(this).fadeOut(200);
     })
     </script>
   </body>
