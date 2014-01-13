@@ -136,7 +136,7 @@ ul.example-orbit.orbit-slides-container{
 	height:600px;
 }
 #staff-hero {
-	background:url('../img/staff.png');
+	background:url('../img/staff.JPG');
 	background-size:cover;
 	height:600px;
 }
@@ -147,7 +147,7 @@ ul.example-orbit.orbit-slides-container{
 	height:600px;
 }
 #register-hero{
-	background:url('../img/reg.png');
+	background:url('../img/reg.JPG');
 	background-size:cover;
 	height:600px;
 }
@@ -377,3 +377,7 @@ blockquote {
 	text-align:center;
 	overflow:scroll;
 }
+
+
+col:nth-child(2n+1) {background: #CCC!important}
+
