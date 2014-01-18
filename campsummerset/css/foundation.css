@@ -2393,7 +2393,7 @@ a.th {
   animation-timing-function: linear; }
 
 .orbit-container {
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
   position: relative;
   background: none; }

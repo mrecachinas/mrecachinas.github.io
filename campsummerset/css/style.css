@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Just+Another+Hand|Sacramento);
-
+#main-content{
+	margin-top:100px;
+}
 #gmt {
 	font-family:'Just Another Hand',cursive;
 	font-size:2.3em;
@@ -147,7 +149,7 @@ ul.example-orbit.orbit-slides-container{
 	height:600px;
 }
 #register-hero{
-	background:url('../img/reg.JPG');
+	background:url('../img/reg1.JPG');
 	background-size:cover;
 	height:600px;
 }
@@ -281,6 +283,12 @@ ul.example-orbit.orbit-slides-container{
 	/*height:50px;*/
 }
 
+@media only screen and (max-width: 641px) {
+	#main-content{
+		margin-top:100px!important;
+	}
+}
+
 @media only screen and (max-width: 40.063em) {
 	.logo{
 		position:relative;
@@ -296,6 +304,9 @@ ul.example-orbit.orbit-slides-container{
 	.modal-course {
 		width:100%;
 		margin:0;
+	}
+	#main-content{
+		margin-top:-100px;
 	}
 }
 
@@ -377,7 +388,22 @@ blockquote {
 	text-align:center;
 	overflow:scroll;
 }
-
-
-col:nth-child(2n+1) {background: #CCC!important}
-
+table{
+	border:none!important;
+}
+col{
+	background:#fed213!important;
+}
+col:nth-child(2n+1) {
+	background: #fbb550!important;
+	border:1px solid #fbb550!important;
+}
+#srs1 {
+	background:#fed213!important;
+}
+#srs2 {
+	background:#fbb550!important;
+}
+#srs3 {
+	background:url(../img/camp3.jpg)!important;
+}
