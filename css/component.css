@@ -71,25 +71,25 @@ body {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #F06060;
+	background: #afbfff;
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #FA987D;
+	background: #ffcc80;
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #72CCA7;
+	background: #ce93d8;
 }
 
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #10A296;
+	background: #a3e9a4;
 }
 
 .bl-box {
@@ -382,16 +382,16 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 .bl-main > section:first-child.bl-expand {
-	background: #EE4444;
+	background: #5677fc;
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: #F98262;
+	background: #ff5722;
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: #4BBE8E;
+	background: #9c27b0;
 }
 .bl-main > section:nth-child(4).bl-expand {
-	background: #0D8278;
+	background: #72d572;
 }
 
 .bl-main.bl-expand-item > section:not(.bl-expand),
