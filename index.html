@@ -45,9 +45,9 @@
             <p>A collection of my various projects.</p>
             <ul id="bl-work-items">
               <li data-panel="panel-1"><a href="#"><img src="images/cat-solo-cup-pst.png" /></a></li>
-<!--               <li data-panel="panel-2"><a href="#"><img src="images/2.jpg" /></a></li>
-              <li data-panel="panel-3"><a href="#"><img src="images/3.jpg" /></a></li>
-              <li data-panel="panel-4"><a href="#"><img src="images/4.jpg" /></a></li> -->
+              <li data-panel="panel-2"><a href="#"><img src="images/shorten.jpg" /></a></li>
+              <!-- <li data-panel="panel-3"><a href="#"><img src="images/3.jpg" /></a></li> -->
+              <!-- <li data-panel="panel-4"><a href="#"><img src="images/4.jpg" /></a></li> -->
             </ul>
           </div>
           <span class="bl-icon bl-icon-close"></span>
@@ -111,14 +111,15 @@
               <p><a href="http://www.github.com/mrecachinas/beer-to-cats" target="_blank">[Source]</a> <a href="http://www.beertocats.com" target="_blank">[Website]</a></p>
             </div>
           </div>
-          <!-- <div data-panel="panel-2">
+          <div data-panel="panel-2">
             <div>
-              <img src="images/2.jpg" />
-              <h3>Chillwave mustache</h3>
-              <p>Squid vinyl scenester literally pug, hashtag tofu try-hard typewriter polaroid craft beer mlkshk cardigan photo booth PBR. Chillwave 90's gentrify american apparel carles disrupt. Pinterest semiotics single-origin coffee craft beer thundercats irony, tumblr bushwick intelligentsia pickled. Narwhal mustache godard master cleanse street art, occupy ugh selfies put a bird on it cray salvia four loko gluten-free shoreditch.</p>
+              <img src="images/shorten.jpg" />
+              <h3>URL Shortener</h3>
+              <p>This was made for fun during my lunchtime one day at work thanks to <a href="http://anat.in">@anatg</a> for the idea. It uses Node.js and Express.js for the server, Jade for the templating engine, and MongoDB for the database. It's pretty straight forward how it works: you enter a url, it checks the database to see if the url is already in there, otherwise it generates a random alphanumeric string of length 3, checks the database to see if that random string exists, and if not, it inserts the new string and url into the database. </p>
+              <p>The more interesting part is that I started by generating a string of length 3 as opposed to a larger string. Having a string of length 3 yields (10 + 26 + 26)^3 = 238,328 permutations, which is good enough for my purposes. If that were to be used in practice, to scale, it would start at length 3, then keep track of the number of permutations for length 3, and gradually step up to 4, and so on...</p>
             </div>
           </div>
-          <div data-panel="panel-3">
+          <!-- <div data-panel="panel-3">
             <div>
               <img src="images/3.jpg" />
               <h3>Austin hella</h3>
