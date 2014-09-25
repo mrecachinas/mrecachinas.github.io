@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mike Recachinas</title>
+    <link rel="shortcut icon" href="favicon.png"> 
+    <script src="../js/modernizr.custom.js"></script>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7243260-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    <style>
+    .container {
+        margin-top:40%;
+    }
+    h1 {
+        font-family:'Helvetica Neue';
+        font-weight:600;
+        text-transform: uppercase;
+        text-align:center;
+        font-size:72px;
+    }
+    a {
+        text-decoration:none;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1 id="countdown"></h1>
+        <h1>Until <a href="http://alumni.virginia.edu/young-alumni/young-alumni-reunions/">#Yar</a></h1>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>    
+    // set the date we're counting down to
+    var target_date = new Date("Oct 25, 2014").getTime();
+     
+    // variables for time units
+    var days, hours, minutes, seconds;
+     
+    // update the tag with id "countdown" every 1 second
+    setInterval(function () {
+     
+        // find the amount of "seconds" between now and target
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+     
+        // do some time calculations
+        days = parseInt(seconds_left / 86400);
+        seconds_left = seconds_left % 86400;
+         
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+         
+        minutes = parseInt(seconds_left / 60);
+        seconds = parseInt(seconds_left % 60);
+         
+        // format countdown string + set tag value
+        $("#countdown").text(days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s");  
+     
+    }, 1000);
+    </script>
+  </body>
+  </html>
