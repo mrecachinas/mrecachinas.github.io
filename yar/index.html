@@ -18,10 +18,12 @@
     })();
     </script>
     <style>
+    * { box-sizing: border-box; }
     .container {
-        margin-top:40%;
+        margin-top:10%;
     }
     h1 {
+    	-webkit-font-smoothing:antialiased;
         font-family:'Helvetica Neue';
         font-weight:600;
         text-transform: uppercase;
@@ -31,12 +33,18 @@
     a {
         text-decoration:none;
     }
+    img { 
+    	max-width:100%; 
+    	display:block;
+        margin:0 auto;
+    }
     </style>
   </head>
   <body>
     <div class="container">
         <h1 id="countdown"></h1>
         <h1>Until <a href="http://alumni.virginia.edu/young-alumni/young-alumni-reunions/">#Yar</a></h1>
+        <img src="http://a.fod4.com/misc/anchorman-teamjump.gif">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>    
