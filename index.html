@@ -29,9 +29,8 @@
           </div>
           <div class="bl-content">
             <h2>Who is Mike Recachinas?</h2>
-            <p>The most important thing to know about me is: I like scotch.</p>
             <img src="images/whiskey.gif">
-            <p>Born and raised in Washington, D.C., I received a Bachelors of Science in Electrical Engineering with a double major in Computer Science, a triple major in Physics, and a minor in Applied Mathematics from the <a href="http://www.virginia.edu/">University of Virginia</a> in May 2014. I'm currently working full-time at <a href="http://www.axiosengineering.com/" target="_blank">Axios, Inc.</a> as a (radio-frequency) software engineer, while researching for my Masters of Science in Electrical Engineering part time at <a href="http://www.virginia.edu/" target="_blank">UVa</a>. (If you're interested, I'm working on noise measurement circuits at microwave and millimeter wave frequencies.) I hope to complete my MS by Summer 2015. After that, I'm planning to get a PhD...</p>
+            <p>Born and raised in Washington, D.C., I received a Bachelors of Science in Electrical Engineering with a double major in Computer Science, a triple major in Physics, and a minor in Applied Mathematics from the <a href="http://www.virginia.edu/">University of Virginia</a> in May 2014. I'm currently working full-time at <a href="http://www.axiosengineering.com/" target="_blank">Axios, Inc.</a> as a software engineer also dabbling in digital signal processing, while researching for my Masters of Science in Electrical Engineering part time at <a href="http://www.virginia.edu/" target="_blank">UVa</a>. (If you're interested, I'm working on noise measurement circuits at microwave and millimeter wave frequencies.) I'm currently finishing measurements and writing up my thesis, so I should be done soon! On the side, I'm working with Westley Weimer marrying programming languages topics, such as automated program repair, with various other computer science topics (e.g., computer graphics). In the near future, I'd like to begin the journey toward a PhD...</p>
 
             <!-- <p>I'm currently not for hire.</p> -->
             <img src="https://scontent-a.xx.fbcdn.net/hphotos-prn2/t31.0-8/977240_1941416410419_1042917925_o.jpg">
@@ -108,16 +107,16 @@
             <div>
               <a href="http://www.github.com/mrecachinas/beer-to-cats" target="_blank"><img src="images/cat-solo-cup.png" /></a>
               <h3>BeerToCats.com</h3>
-              <p>This started with a desire to learn computer vision techniques and do something cool. Working with <a href="http://www.github.com/gottagitgit" target="_blank">gottagitgit</a> and <a href="http://www.github.com/jb6zb" target="_blank">jb6zb</a>, we used histogram of oriented gradient (HOG) feature detection and a support vector machine (SVM) classifier to detect solo cups, beer cans, and beer bottles, ultimately covering them up with a random image (like a cat).</p>
-              <p>While this worked fairly well, it could have been better. Some ideas to improve it include training with a ton more samples and using neural nets to achieve a deeper learning.</p>
-              <p><a href="http://www.github.com/mrecachinas/beer-to-cats" target="_blank">[Source]</a> <a href="http://www.beertocats.com" target="_blank">[Website]</a>  (website is not entirely working because of Heroku's pip issues)</p>
+              <p>This started with a desire to learn computer vision techniques and do something cool. I used histogram of oriented gradient (HOG) feature detection and a support vector machine (SVM) classifier to detect solo cups, beer cans, and beer bottles, ultimately covering them up with a random image (like a cat).</p>
+              <p>While this worked fairly well, it could have been better.</p>
+              <p><a href="http://www.github.com/mrecachinas/beer-to-cats" target="_blank">[Source]</a></p>
             </div>
           </div>
           <div data-panel="panel-2">
             <div>
               <img src="images/shorten.jpg" />
               <h3>URL Shortener</h3>
-              <p>This was made for fun during my lunchtime one day at work thanks to <a href="http://anat.in">@anatg</a> for the idea. It uses Node.js and Express.js for the server, Jade for the templating engine, and MongoDB for the database. It's pretty straight forward how it works: you enter a url, it checks the database to see if the url is already in there, otherwise it generates a random alphanumeric string of length 3, checks the database to see if that random string exists, and if not, it inserts the new string and url into the database. </p>
+              <p>This was made for fun during my lunchtime one day at work. It uses Node.js and Express.js for the server, Jade for the templating engine, and MongoDB for the database. It's pretty straight forward how it works: you enter a url, it checks the database to see if the url is already in there, otherwise it generates a random alphanumeric string of length 3, checks the database to see if that random string exists, and if not, it inserts the new string and url into the database. </p>
               <p>The more interesting part is that I started by generating a string of length 3 as opposed to a larger string. Having a string of length 3 yields (10 + 26 + 26)^3 = 238,328 permutations, which is good enough for my purposes. If that were to be used in practice, to scale, it would start at length 3, then keep track of the number of permutations for length 3, and gradually step up to 4, and so on...</p>
               <p><a href="http://github.com/mrecachinas/simple-url-shortener" target="_blank">[Source]</a></p>
             </div>
