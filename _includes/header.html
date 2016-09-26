@@ -1,0 +1,9 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" href="/"></a>
+    <nav class="site-nav">
+      {% assign pages_list = site.pages %}
+      {% assign group = 'navigation' %}
+      {% include pages_list.html %}
+    </nav>
+</header>

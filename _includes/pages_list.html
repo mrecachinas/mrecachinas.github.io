@@ -1,0 +1,15 @@
+<ul class="no-list-style">
+{% for node in site.pages %}
+  {% if group == null or group == node.group %}
+    {% if node.url == page.url %}
+      <li class="trigger navbar-list active">
+    {% else %}
+      <li class="trigger navbar-list">
+    {% endif %}
+          <a class="page-link" href="{{ node.url }}">{{ node.title }}</a>
+      </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% assign pages_list = nil %}
+{% assign group = nil %}
