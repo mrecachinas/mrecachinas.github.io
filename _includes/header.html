@@ -1,9 +1,16 @@
-<header class="site-header" role="banner">
-  <div class="wrapper">
-    <a class="site-title" href="/"></a>
-    <nav class="site-nav">
-      {% assign pages_list = site.pages %}
-      {% assign group = 'navigation' %}
-      {% include pages_list.html %}
-    </nav>
-</header>
+<div class="header-wrapper-wrapper">
+  <div class="header-wrapper">
+    <header class="site-header" role="banner">
+      <hgroup>
+        <h1>
+          <a class="site-title" href="/">Michael Recachinas</a>
+        </h1>
+      </hgroup>
+      <nav class="site-nav">
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include pages_list.html %}
+      </nav>
+    </header>
+  </div>
+</div>

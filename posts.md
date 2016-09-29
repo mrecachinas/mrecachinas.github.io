@@ -5,6 +5,6 @@ permalink: /posts/
 group: "navigation"
 ---
 
-# Posts
-
+<section>
 {% include posts_list.html %}
+</section>

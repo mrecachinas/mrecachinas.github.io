@@ -22,6 +22,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" #"http://mikereca.co" # the base hostname & protocol for your site
 twitter_username: mgrecachinas
 github_username:  mrecachinas
+gitlab_username:  mrecachinas
+facebook_username:  mikerecachinas
+linkedin_username:  mikerecachinas
 
 # Build settings
 markdown: kramdown
