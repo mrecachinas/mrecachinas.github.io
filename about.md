@@ -16,8 +16,8 @@ group: "navigation"
   </figcaption>
 </figure>
 <section>
-<p>I graduated from the <a href="http://www.virginia.edu">University of Virginia</a> in 2014 with a Bachelor of Science in <a href="http://www.ece.virginia.edu">Electrical Engineering</a> and a second major in <a href="http://www.cs.virginia.edu">Computer Science</a>. In my spare time, I'm finishing my Master of Science in <a href="http://www.ece.virginia.edu">Electrical Engineering</a> on the topic of approximations to noise characterization in microwave and millimeter devices under the advisement of <a href="http://www.ece.virginia.edu/faculty/weikle.html">Bobby Weikle</a>. I have been conducting side research with <a href="http://www.cs.virginia.edu/~weimer">Wes Weimer</a> working on improving software properties using genetic algorithms.</p>
-<p>On the side, I have a (fairly new and budding) passion for photography and travel. I'm also absolutely in love with my puppy (and primary photography subject), Ellie.</p>
+<p>I graduated from the <a href="http://www.virginia.edu">University of Virginia</a> in 2014 with a Bachelor of Science in <a href="http://www.ece.virginia.edu">Electrical Engineering</a> and a second major in <a href="http://www.cs.virginia.edu">Computer Science</a> and in 2016 with a Master of Engineering in <a href="http://www.ece.virginia.edu">Electrical Engineering</a> on the topic of approximating noise characterization in microwave and millimeter devices. I had the pleasure of conducting research under <a href="http://www.ece.virginia.edu/faculty/weikle.html">Bobby Weikle</a>. I have been conducting side research with <a href="http://www.cs.virginia.edu/~weimer">Wes Weimer</a> on improving software properties using genetic algorithms.</p>
+<p>On the side, I have a (fairly new and budding) passion for photography, food (especially <a href="https://en.wikipedia.org/wiki/Molecular_gastronomy">molecular gastronomy</a>), and travel. I'm also absolutely in love with my puppy (and primary photography subject), Ellie, and my fiancée, <a href="https://erinveasey.github.io">Erin</a>.</p>
 </section>
 <figure class="center fig">
   <img src="/images/ellie.jpg">

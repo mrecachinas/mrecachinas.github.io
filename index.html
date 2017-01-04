@@ -3,16 +3,20 @@ layout: default
 ---
 
 <div class="home">
-
   <ul class="post-list">
-    <h1 class="page-heading">Posts</h1>
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </li>
-    {% endfor %}
+    {% if site.posts.length > 0 %}
+      <h1 class="page-heading">Posts</h1>
+      {% for post in site.posts %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    {% else %}
+    <h1 class="page-heading">Hi there, I'm Mike.<h1>
+    <h2>Once I start writing some posts, they'll show up here!</h2>
+    {% endif %}
   </ul>
 </div>
