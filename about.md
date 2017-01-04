@@ -12,7 +12,7 @@ group: "navigation"
 <figure class="center fig">
   <img src="/images/me-in-florence-2013.jpg">
   <figcaption>
-    Florence, Italy
+    <a href="https://www.google.com/maps/place/Piazzale+Michelangelo,+50125+Firenze,+Italy/@43.763369,11.2643762,20z/data=!3m1!1e3!4m2!3m1!1s0x132a53f743663843:0xb4f768e1820d5119">Florence, Italy</a>
   </figcaption>
 </figure>
 <section>
