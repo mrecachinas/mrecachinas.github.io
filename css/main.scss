@@ -205,7 +205,8 @@ nav.site-nav {
     margin-top:0.21em;
     ul {
         li {
-            margin-right:1.7em;
+            margin-right:0.85em;
+            margin-left:0.85em;
             a {
                 font-size: 0.9rem;
             }
@@ -273,7 +274,7 @@ img {
     -ms-interpolation-mode:bicubic;
 }
 
-section, .post-header, .post-content > h1, .post-list {
+section, .page-heading, .post-list > h2, .post-header, .post-content > h1, .post-list {
     width: 37rem;
     margin: 15px auto;
 }
@@ -289,12 +290,6 @@ section, .post-header, .post-content > h1, .post-list {
     section, .post-header, .post-content > h1 {
         width: 92%;
         margin: 0 auto;
-    }
-}
-
-@media (max-width: 54em) {
-    figure {
-        width: 100%;
     }
 }
 
@@ -322,10 +317,22 @@ footer {
 
         li.navbar-list {
             width: auto;
-            margin-right: 2.5em;
+            margin-right: 1.125em;
+            margin-left: 1.125em;
             display:inline-block;
             float:left;
             font-size:0.9rem;
+        }
+    }
+}
+
+@media (max-width: 54em) {
+    figure, .post-list {
+        width: 100%;
+    }
+    footer {
+        .wrap {
+            width: 100%;
         }
     }
 }
