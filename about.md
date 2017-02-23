@@ -7,7 +7,7 @@ group: "navigation"
 
 # Hi, I'm Mike!
 <section>
-<p>I'm a software engineer at <a target="_blank" rel="noopener noreferrer" href="http://www.lgsinnovations.com/about/axios/">Axios, Inc. (an LGS Innovations Company)</a> where I've been building various digital signal processing systems and machine learning-based recommender systems leveraging languages like Python, C++, Java, and Rust, and other technologies (e.g., databases, tools, frameworks, etc.), such as MongoDB, PostgreSQL, Neo4j, Apache Spark, CUDA, Docker, RabbitMQ, etc.</p>
+<p>I'm a software engineer at <a target="_blank" rel="noopener noreferrer" href="http://www.lgsinnovations.com/about/axios/">Axios, Inc. (an LGS Innovations Company)</a> where I've been building various digital signal processing systems and machine learning-based recommender systems leveraging languages like Python, C++, Java, and Rust, and other technologies (e.g., databases, tools, frameworks, etc.), such as MongoDB, PostgreSQL, Neo4j, Apache Spark, CUDA, Docker, RabbitMQ, React, React-Native, etc.</p>
 </section>
 <figure class="center fig">
   <img src="/images/me-in-florence-2013.jpg">
