@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "mrecachinas.github.io",
+    siteUrl: "https://mike.recachinas.dev",
+    title: "Mike Recachinas",
   },
   plugins: [
     "gatsby-plugin-emotion",
