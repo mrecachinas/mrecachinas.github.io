@@ -4,7 +4,7 @@
       <a href="https://github.com/mrecachinas" target="_blank"
         ><font-awesome-icon :icon="['fab', 'github']"
       /></a>
-      <a href="https://instagram.com/mrecachinas" target="_blank"
+      <a href="https://instagram.com/mikerecachinas" target="_blank"
         ><font-awesome-icon :icon="['fab', 'instagram']"
       /></a>
       <a href="https://linkedin.com/in/mrecachinas" target="_blank"
