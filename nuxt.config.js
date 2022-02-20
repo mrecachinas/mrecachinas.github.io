@@ -37,8 +37,8 @@ export default {
   fontawesome: {
     icons: {
       solid: true,
-      brands: true
-    }
+      brands: true,
+    },
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
