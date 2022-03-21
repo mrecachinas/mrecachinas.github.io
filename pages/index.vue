@@ -19,7 +19,7 @@
       <br />
       <div>
         💻 Senior Software Engineer
-        <a target="_blank" href="https://spectric.com">@spectriclabs</a>
+        <a target="_blank" href="https://github.com">@github</a>
       </div>
       <div>👨‍👩‍👧 Husband and Father</div>
       <div>🐶 Dog Dad</div>
