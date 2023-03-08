@@ -18,7 +18,7 @@
       <h1 class="text-3xl">Michael Recachinas</h1>
       <br />
       <div>
-        💻 Senior Software Engineer
+        💻 Staff Software Engineer
         <a target="_blank" href="https://github.com">@github</a>
       </div>
       <div>👨‍👩‍👧 Husband and Father</div>
