@@ -202,10 +202,29 @@ body {
 }
 
 /* Theme toggle */
-.theme-toggle {
+.top-nav {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 100;
+}
+
+.nav-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.theme-toggle {
   background: none;
   border: none;
   color: var(--color-accent);
@@ -214,7 +233,6 @@ body {
   padding: 0.5rem;
   border-radius: 50%;
   transition: color 0.2s ease, transform 0.2s ease;
-  z-index: 100;
 }
 
 .theme-toggle:hover {
@@ -248,5 +266,96 @@ body {
   }
   [data-theme="auto"] .theme-toggle .fa-moon {
     display: none;
+  }
+}
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-accent);
+  opacity: 0.3;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-accent);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+  background: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.timeline-content {
+  text-align: left;
+}
+
+.timeline-date {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.timeline-description {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin: 0.25rem 0 0 0;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    max-width: 100%;
+    padding: 0.5rem 0;
+  }
+  
+  .timeline-title {
+    font-size: 1rem;
+  }
+  
+  .timeline-date {
+    font-size: 0.75rem;
+  }
+  
+  .timeline-description {
+    font-size: 0.85rem;
   }
 }

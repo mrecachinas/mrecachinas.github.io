@@ -2,17 +2,34 @@
 layout: page
 title: About
 permalink: /about/
+timeline:
+  - date: "2022 – Present"
+    title: "GitHub"
+  - date: "2020 – 2022"
+    title: "Spectric Labs"
+  - date: "2019 – 2020"
+    title: "CACI"
+  - date: "2015 – 2019"
+    title: "LGS Innovations"
+  - date: "2015 - 2016"
+    title: "UVA"
+    description: "M.S. Electrical Engineering"
+  - date: "2014 – 2015"
+    title: "Axios"
+  - date: "2010 – 2014"
+    title: "UVA"
+    description: "B.S. Electrical Engineering & Computer Science"
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<div class="timeline">
+{% for item in page.timeline %}
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <span class="timeline-date">{{ item.date }}</span>
+      <h3 class="timeline-title">{{ item.title }}</h3>
+      {% if item.description %}<p class="timeline-description">{{ item.description }}</p>{% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>
