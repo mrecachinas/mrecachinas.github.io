@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  {% feed_meta %}
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'auto';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <button class="theme-toggle" aria-label="Toggle theme">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+  </button>
+  <main class="profile-container">
+    <div class="profile-card">
+      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+      <h1 class="profile-name">{{ site.author.name }}</h1>
+      <p class="profile-tagline">
+        <a href="https://erin.recachinas.dev" target="_blank" rel="noopener">Husband</a> · Dad · Dog-Dad · Engineer @ GitHub
+      </p>
+      <div class="social-links">
+        {% if site.author.github %}
+        <a href="https://github.com/{{ site.author.github }}" aria-label="GitHub" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if site.author.linkedin %}
+        <a href="https://linkedin.com/in/{{ site.author.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+        {% if site.author.twitter %}
+        <a href="https://twitter.com/{{ site.author.twitter }}" aria-label="Twitter" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+        {% endif %}
+        {% if site.author.mastodon %}
+        <a href="{{ site.author.mastodon }}" aria-label="Mastodon" target="_blank" rel="me noopener">
+          <i class="fab fa-mastodon"></i>
+        </a>
+        {% endif %}
+        {% if site.author.email %}
+        <a href="mailto:{{ site.author.email }}" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </main>
+  {{ content }}
+  <script>
+    (function() {
+      const toggle = document.querySelector('.theme-toggle');
+      const html = document.documentElement;
+      
+      function getEffectiveTheme() {
+        const current = html.getAttribute('data-theme');
+        if (current === 'auto') {
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        return current;
+      }
+      
+      toggle.addEventListener('click', function() {
+        const effective = getEffectiveTheme();
+        const newTheme = effective === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+    })();
+  </script>
+</body>
+</html>
