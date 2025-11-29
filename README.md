@@ -13,11 +13,11 @@ Visit http://localhost:4000
 
 ## Configuration
 
-Edit `_config.yml` to update:
+Edit `index.markdown` to update:
 - Name and title
 - Social links (GitHub, LinkedIn, Twitter, Mastodon, email)
 
-Add your profile image to `assets/images/profile.jpg`.
+Profile image is `assets/images/profile.jpg`.
 
 ## License
 
